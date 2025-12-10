@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://tu-dominio.netlify.app
+Host: https://andres-ayala.netlify.app
 
 # Sitemaps
-Sitemap: https://tu-dominio.netlify.app/sitemap.xml
+Sitemap: https://andres-ayala.netlify.app/sitemap.xml
