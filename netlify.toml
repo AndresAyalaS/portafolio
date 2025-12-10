@@ -1,0 +1,47 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+  
+[build.environment]
+  NODE_VERSION = "20"
+  AWS_LAMBDA_JS_RUNTIME = "nodejs20.x"
+  # Usa la imagen de build Noble (Ubuntu 24.04)
+  BUILD_IMAGE = "noble"
+
+# Plugin de Next.js para Netlify
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Headers personalizados para todas las páginas
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache para archivos estáticos
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirecciones (ejemplos)
+# [[redirects]]
+#   from = "/old-path"
+#   to = "/new-path"
+#   status = 301
+
+# Configuración de contexto de producción
+[context.production.environment]
+  NEXT_PUBLIC_BUILD_ENV = "production"
+
+# Configuración de contexto de desarrollo/preview
+[context.deploy-preview.environment]
+  NEXT_PUBLIC_BUILD_ENV = "preview"

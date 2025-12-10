@@ -2,30 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  /* height: 100%; */
-}
-html,
-body {
-  /* height: 100%; */
-  color: #fff;
-  background: #1f1934;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    color: #fff;
+    background: #1f1934;
+  }
+
+  main {
+    background: #393a47;
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  /* Mejora de enfoque para accesibilidad */
+  *:focus-visible {
+    outline: 2px solid #f5741c;
+    outline-offset: 2px;
+  }
 }
 
-main {
-  background: #393a47;
-  height: 100vh;
-  height: 100dvh;
-}
-
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background-color: #f5741c;
+@layer components {
+  /* Estilos de Swiper */
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #f5741c;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  /* Animación de carga personalizada */
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+      box-shadow: 0 0 20px rgba(245, 116, 28, 0.5);
+    }
+    50% {
+      opacity: 0.8;
+      box-shadow: 0 0 40px rgba(245, 116, 28, 0.8);
+    }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
   }
 }

@@ -21,6 +21,8 @@ const Header = () => {
                                 key={id}
                                 href={src}
                                 target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={`Visitar perfil de red social ${id}`}
                                 className="transition-all duration-300 hover:text-secondary"
                             >
                                 {logo}

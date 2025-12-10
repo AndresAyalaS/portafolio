@@ -88,115 +88,123 @@ export const dataAboutPage = [
   {
     id: 1,
     title: "Desarrollador fullstack",
-    subtitle: "LINKTIC",
-    description:
-      "Desarrollador Fullstack en el sector financiero, liderando la creación de un sistema modular desde cero, utilizando Java y Spring Boot, con énfasis en pruebas unitarias y buenas prácticas de código limpio, además de aprovechar los servicios de AWS.",
-    dateF: "Actual",
-    dateI: "Abr 2024",
+    subtitle: "MICHAEL PAGE",
+    description: (
+      <div>
+        • Desarrollé soluciones web escalables con Angular (frontend) y .NET
+        (backend).
+        <br />
+        • Implementé una arquitectura en capas en el backend, mejorando la
+        organización y mantenibilidad del código.
+        <br />
+        • Construí APIs RESTful para una integración fluida entre frontend y
+        backend.
+        <br />• Colaboré en un entorno ágil utilizando Git para control de
+        versiones y planificación iterativa.
+      </div>
+    ),
+    dateF: "Feb 2025",
+    dateI: "Ene 2025",
   },
   {
     id: 2,
+    title: "Desarrollador fullstack",
+    subtitle: "LINKTIC",
+    description: (
+      <div>
+        • Lideré el desarrollo de sistemas modulares desde cero con Java (Spring
+        Boot) y .NET.
+        <br />
+        • Diseñé e implementé una arquitectura basada en microservicios,
+        permitiendo escalabilidad y despliegue independiente.
+        <br />
+        • Realicé pruebas unitarias y de integración con una cobertura del 85%,
+        reduciendo errores en producción.
+        <br />
+        • Aproveché servicios de AWS para el despliegue y SonarQube para
+        análisis de calidad del código, mejorando la seguridad el rendimiento.
+        <br />• Adopté principios de código limpio (Clean Code), facilitando el
+        trabajo colaborativo y la mantenibilidad del sistema.
+      </div>
+    ),
+    dateF: "Dic 2024",
+    dateI: "Abr 2024",
+  },
+  {
+    id: 3,
     title: "Desarrollador Senior fullstack",
     subtitle: "GRUPO MOK",
     description: (
       <div>
-        • Desarrollador Fullstack en múltiples proyectos, implementando nuevas
-        funcionalidades y ofreciendo soporte a aplicaciones utilizando
-        tecnologías avanzadas como HTML5, CSS3, Javascript, Typescript, React y
-        Angular en el Frontend. <br />
-        • Implementación de nuevas funcionalidades que mejoran la experiencia
-        del usuario.
+        • Implementé funcionalidades en el frontend con Angular y React, y
+        desarrollé lógica de negocio en .NET, optimizando el rendimiento.
         <br />
-        • Optimización de la lógica del negocio en .NET para mayor eficiencia.
-        <br />
-        • Colaboración efectiva con el equipo a través de control de versiones
-        en Git.
-        <br />
-        • Despliegue ágil en diferentes ambientes, garantizando calidad y
-        rapidez.
-        <br />• Aplicación de buenas prácticas de código para mantener
-        estándares altos.
+        • Brindé soporte a aplicaciones en producción y realicé mejoras
+        continuas en base a retroalimentación del usuario.
+        <br />• Mantuve altos estándares de calidad mediante control de
+        versiones en Git y buenas prácticas de codificación.
       </div>
     ),
     dateF: "Sep 2023",
     dateI: "Jul 2022",
   },
   {
-    id: 3,
+    id: 4,
     title: "Desarrollador Senior",
     subtitle: "INFORMÁTICA & TECNOLOGÍA STEFANINI S.A",
     description: (
       <div>
-        • Desarrollador Frontend con amplia experiencia en Javascript y .Net,
-        utilizando frameworks de Angular e Ionic para la creación de
-        aplicaciones web innovadoras.
-        <br /> • Dominio de tecnologías como TypeScript, HTML5, CSS3, Bootstrap,
-        Angular Material y Azure.
-        <br /> • Colaboración efectiva en el equipo de desarrollo para
-        implementar nuevas funcionalidades y realizar mantenimiento de
-        aplicaciones, siguiendo buenas prácticas de codificación.
-        <br /> • Experiencia en despliegue de funcionalidades en entornos de QA
-        y gestión de repositorios utilizando Bitbucket.
-        <br /> • Resultados tangibles: aplicaciones web mejoradas y usuarios
-        satisfechos.
+        • Desarrollé interfaces con Angular e Ionic y lógica backend con .NET.
+        <br />
+        • Utilicé Azure para despliegue y Bitbucket para gestión de versiones.
+        <br />• Contribuí a la mejora continua del producto en colaboración con
+        el equipo de QA.
       </div>
     ),
     dateF: "Jul 2022",
     dateI: "Oct 2021",
   },
   {
-    id: 4,
+    id: 5,
     title: "Desarrollador Frontend Senior",
     subtitle: "GLOBAL HITSS",
     description: (
       <div>
-        • Desarrollador Frontend con experiencia en Angular 10 y ReactJS,
-        optimizando aplicaciones para mejorar la interactividad y funcionalidad.
+        • Desarrollé interfaces dinámicas usando Angular, ReactJS y Redux,
+        mejorando la experiencia del usuario final.
         <br />
-        • Implementé NodeJs y consumí APIs REST, optimizando la conectividad.
+        • IConsumí e integré APIs REST con Node.js, reduciendo la latencia de
+        carga en más de un 20%.
         <br />
-        • Apliqué el patrón Redux para una gestión eficiente del estado de las
-        apps.
-        <br />
-        • Utilicé HTML5, CSS3 y Bootstrap para crear interfaces visuales
-        atractivas.
-        <br />
-        • Gestioné repositorios con GIT, garantizando un flujo colaborativo
-        efectivo.
-        <br />• Colaboré con QA en la revisión de historias para asegurar la
-        calidad del producto.
+        • Colaboré con equipos QA para validar historias de usuario, asegurando
+        la entrega de productos con altos estándares de calidad.
+        <br />• Versioné el código con Git, asegurando integridad y trazabilidad
+        en el ciclo de desarrollo.
       </div>
     ),
     dateF: "Sep 2021",
     dateI: "Nov 2020",
   },
   {
-    id: 4,
+    id: 6,
     title: "Desarrollador",
     subtitle: "ALCANOS DE COLOMBIA S.A E.S.P",
     description: (
       <div>
-        • Desarrollador Frontend en una aplicación interna, encargándome de la
-        implementación de la interfaz gráfica según mockups del equipo de
-        diseño.
+        • Desarrollé componentes frontend usando Angular 8, HTML5, CSS3 y
+        Bootstrap, cumpliendo especificaciones de diseño UX/UI.
         <br />
-        • Utilización de JavaScript con el framework Angular 8, optimizando el
-        rendimiento y la experiencia de usuario.
-        <br />
-        • Dominio de HTML5, CSS3, Bootstrap y TypeScript para crear interfaces
-        responsivas y atractivas.
-        <br />
-        • Integración y consumo de APIs REST para una funcionalidad robusta de
-        la aplicación.
-        <br />• Gestión de versiones mediante GIT y trabajo en un entorno de
-        metodología ágil SCRUM para fomentar la colaboración y la eficiencia.
+        • Integré servicios web a través de APIs REST, fortaleciendo la
+        interoperabilidad del sistema.
+        <br />• Participé activamente en metodologías ágiles Scrum, entregando
+        mejoras iterativas en sprints y utilicé Git para control de versiones.
       </div>
     ),
     dateF: "Ago 2020",
     dateI: "Oct 2019",
   },
   {
-    id: 5,
+    id: 7,
     title: "Desarrollador junior",
     subtitle: "BLACK GOLDEN SAS",
     description: (
@@ -299,22 +307,22 @@ export const dataPortfolio = [
   },
   {
     id: 2,
-    title: "Desarrollo Web Ágil",
-    image: "/image-2.webp",
+    title: "THE SIMPSONS APP",
+    image: "/simpsons.webp",
     urlGithub: "#!",
-    urlDemo: "https://black-bank.netlify.app/",
+    urlDemo: "https://magoblackappsimpsons.netlify.app/",
   },
   {
     id: 3,
-    title: "Estrategias Web",
-    image: "/image-5.webp",
+    title: "Sistema de préstamos",
+    image: "/image-6.webp",
     urlGithub: "#!",
-    urlDemo: "https://black-bank.netlify.app/",
+    urlDemo: "https://magoblack-prestamoequipos.netlify.app/",
   },
   {
     id: 4,
     title: "Ideas Creativas",
-    image: "/image-6.webp",
+    image: "/image-2.webp",
     urlGithub: "#!",
     urlDemo: "https://black-bank.netlify.app/",
   },
