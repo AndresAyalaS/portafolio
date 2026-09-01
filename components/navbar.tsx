@@ -14,17 +14,17 @@ const Navbar = () => {
         <MotionTransition position="right" className="fixed z-40 flex flex-col items-center justify-center w-full mt-auto h-max bottom-10">
             <nav aria-label="Navegación principal">
                 <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-white/15 background-blur-sm">
-                    {itemsNavbar.map((item) => (
+                    {itemsNavbar.map(({ id, title, icon: Icon, link }) => (
                         <div
-                            key={item.id}
-                            className={`px-3 py-2 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${router === item.link && 'bg-secondary'}`}
+                            key={id}
+                            className={`px-3 py-2 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${router === link && 'bg-secondary'}`}
                             data-tooltip-target="tooltip-default">
-                            <Link 
-                                href={item.link}
-                                aria-label={`Ir a ${item.title}`}
-                                aria-current={router === item.link ? 'page' : undefined}
+                            <Link
+                                href={link}
+                                aria-label={`Ir a ${title}`}
+                                aria-current={router === link ? 'page' : undefined}
                             >
-                                {item.icon}
+                                <Icon size={25} color="#fff" strokeWidth={1} />
                             </Link>
                         </div>
                     ))}

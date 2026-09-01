@@ -30,7 +30,11 @@ const TimeLine = () => {
                   {data.subtitle}
                 </div>
               </div>
-              <div className="text-slate-400">{data.description}</div>
+              <ul className="text-slate-400 space-y-1">
+                {data.description.map((item, i) => (
+                  <li key={i}>• {item}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

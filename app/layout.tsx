@@ -6,8 +6,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import Navbar from "@/components/navbar";
-import Header from "@/components/header";
+import { LayoutWrapper } from "@/components/layout-wrapper";
+import { ThemeProvider } from "@/utils/theme-provider";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -62,9 +62,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={urbanist.className}>
-        <Navbar />
-        <Header />
-        {children}
+        <ThemeProvider>
+          <LayoutWrapper />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
