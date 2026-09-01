@@ -1,8 +1,10 @@
-"use client"
-
-import { CoverParticles } from "@/components/cover-particles";
+import dynamic from "next/dynamic";
 import Introduction from "@/components/introduction";
 import TransitionPage from "@/components/transition-page";
+
+const CoverParticles = dynamic(() => import("@/components/cover-particles").then((mod) => ({ default: mod.CoverParticles })), {
+  ssr: false,
+});
 
 export default function Home() {
   return (

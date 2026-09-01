@@ -3,23 +3,40 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --bg-primary: #1f1934;
+    --bg-secondary: #393a47;
+    --text-primary: #ffffff;
+    --text-secondary: #b8b8c8;
+    --border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  html.light {
+    --bg-primary: #f8f7ff;
+    --bg-secondary: #ffffff;
+    --text-primary: #0f0014;
+    --text-secondary: #6b6b7d;
+    --border-color: rgba(15, 0, 20, 0.1);
+  }
+
   html {
     scroll-behavior: smooth;
   }
-  
+
   html,
   body {
-    color: #fff;
-    background: #1f1934;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   main {
-    background: #393a47;
+    background: var(--bg-secondary);
     height: 100vh;
     height: 100dvh;
+    transition: background-color 0.3s ease;
   }
 
-  /* Mejora de enfoque para accesibilidad */
   *:focus-visible {
     outline: 2px solid #f5741c;
     outline-offset: 2px;
@@ -27,10 +44,20 @@
 }
 
 @layer components {
-  /* Estilos de Swiper */
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     background-color: #f5741c;
+  }
+
+  .card-base {
+    @apply rounded-lg border transition-all duration-300;
+    border-color: var(--border-color);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .card-base:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #f5741c;
   }
 }
 
@@ -38,8 +65,7 @@
   .text-balance {
     text-wrap: balance;
   }
-  
-  /* Animación de carga personalizada */
+
   @keyframes pulse-glow {
     0%, 100% {
       opacity: 1;
@@ -50,7 +76,7 @@
       box-shadow: 0 0 40px rgba(245, 116, 28, 0.8);
     }
   }
-  
+
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
   }

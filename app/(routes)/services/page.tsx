@@ -27,9 +27,6 @@ const ServicesPage = () => {
               Master, con enfoque ágil, calidad de código y colaboración
               efectiva.
             </p>
-            {/* <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">
-              Contacta conmigo
-            </button> */}
           </div>
 
           {/* SLIDER */}
